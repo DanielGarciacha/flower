@@ -40,3 +40,4 @@ document.addEventListener('DOMContentLoaded', () => {
     animateFlower('flower1');
     animateFlower('flower2');
 });
+
