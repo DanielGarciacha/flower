@@ -112,6 +112,8 @@ body {
     background: linear-gradient(45deg, transparent 0%, rgba(255,255,255,0.4) 50%, transparent 100%);
     border-radius: inherit;
 }
+
+/* Sol */
 .sun {
     position: absolute;
     top: 50px;
@@ -127,15 +129,32 @@ body {
     0% { transform: scale(1); }
     100% { transform: scale(1.1); }
 }
+
+/* Nubes */
 .cloud {
     position: absolute;
     background: white;
     border-radius: 50%;
-    animation: moveCloud linear infinite;
     opacity: 0.8;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    animation: moveCloud 20s linear infinite;
 }
+.cloud1 {
+    width: 120px;
+    height: 60px;
+    top: 100px;
+    left: -120px;
+    animation-duration: 30s;
+}
+.cloud2 {
+    width: 180px;
+    height: 90px;
+    top: 150px;
+    left: -180px;
+    animation-duration: 40s;
+}
+
 @keyframes moveCloud {
     0% { left: -10%; }
     100% { left: 110%; }
 }
-
